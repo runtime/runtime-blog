@@ -1,0 +1,9 @@
+.post-item  {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+.post-item.item img {
+    max-width: 180px;
+}
