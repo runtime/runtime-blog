@@ -19,13 +19,13 @@ const App = () => {
             <div className="ui grid">
                 <div className="ui row">
                     <div className="eleven wide column">
-                        <PostDetail post={currPost} />
+                        {<PostDetail post={currPost} />}
                     </div>
                     <div className="five wide column">
                         <PostList
                             //onPostSelect={onPostSelect}
                             // shorthand the onPostSelect Function to remove extra function
-                            onPostSelect={setCurrPost}
+                            //onPostSelect={setCurrPost}
                             posts={posts}/>
                     </div>
                 </div>

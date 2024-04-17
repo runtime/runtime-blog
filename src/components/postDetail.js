@@ -5,16 +5,19 @@ const PostDetail = ({post}) => {
        return <div>loading...</div>
     }
 
-    const postSrc = `https://www.youtube.com/embed/${post.id.postId}`;
+    //const postSrc = `https://www.youtube.com/embed/${post.id.postId}`;
 
     return(
         <div>
-            <div className="ui embed">
-                <iframe title="post player" src={postSrc} />
-            </div>
+            {/*<div className="ui embed">*/}
+            {/*    <iframe title="post player" src={postSrc} />*/}
+            {/*</div>*/}
             <div className="ui segment">
-                <h4 className="ui header">{post.snippet.title}</h4>
-                <p>{post.snippet.description}</p>
+                <p></p>
+                <img src='https://placekitten.com/g/300/100'/>
+                <h4 className="ui header">{post.title}</h4>
+                <p className="ui body" >{post.body}</p>
+                <p></p>
             </div>
         </div>
     )

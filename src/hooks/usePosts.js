@@ -12,20 +12,34 @@ const usePosts = (defaultSearchQuery) => {
 
     const search = async (query) => {
         try {
-            const response = await BlogAPI.get(`posts/${query}`, {
-                params: {
-                    //'id': 1
-                },
+            const response = await BlogAPI.get(`hello`, {
+                // params: {
+                //     'itemId': '1'
+                // },
+                // params: {
+                //     'Key': {'itemId': `${query}`},
+                // },
                 headers: {
+                    // "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+                    // "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+                    // "Access-Control-Allow-Origin": "http://localhost:3000",
+                    // "Content-Type": "application/json"
+
+
+
                     "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-                    "Access-Control-Allow-Methods": "GET,PUT,OPTIONS",
+                    "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
                     "Access-Control-Allow-Origin": "*",
-                    "Content-Type": "application/json",
-                    "x-api-key": "1qRS60RkX1aurXTqlK4Wv36eSRSmIiTQ2F7V1zrR"
+
+
+                    // "Access-Control-Allow-Headers": "Content-Type,",
+                    // "Access-Control-Allow-Methods": "*",
+                    // "Access-Control-Allow-Credential":"false",
+                    // "Access-Control-Allow-Origin": "*",
                 }
             });
-            console.log(response.data.items);
-            setPosts(response.data.items);
+            console.log('[UsePosts] response.data', response);
+            setPosts(response);
         } catch (err) {
             console.error(err)
         }
