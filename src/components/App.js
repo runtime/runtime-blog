@@ -25,7 +25,7 @@ const App = () => {
                         <PostList
                             //onPostSelect={onPostSelect}
                             // shorthand the onPostSelect Function to remove extra function
-                            //onPostSelect={setCurrPost}
+                            onPostSelect={setCurrPost}
                             posts={posts}/>
                     </div>
                 </div>

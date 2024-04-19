@@ -9,14 +9,15 @@ const PostDetail = ({post}) => {
 
     return(
         <div>
-            {/*<div className="ui embed">*/}
-            {/*    <iframe title="post player" src={postSrc} />*/}
-            {/*</div>*/}
+            <div className="ui embed">
+                <iframe title="post player" src={post.media.video} />
+            </div>
             <div className="ui segment">
                 <p></p>
-                <img src='https://placekitten.com/g/300/100'/>
+                <img alt={post.title} src={post.media.image}/>
                 <h4 className="ui header">{post.title}</h4>
-                <p className="ui body" >{post.body}</p>
+                <p className="ui body" >{post.description}</p>
+                <p className="ui body">{post.tags}</p>
                 <p></p>
             </div>
         </div>

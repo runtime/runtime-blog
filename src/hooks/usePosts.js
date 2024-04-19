@@ -12,10 +12,10 @@ const usePosts = (defaultSearchQuery) => {
 
     const search = async (query) => {
         try {
-            const response = await BlogAPI.post(`hello`, {
-                // params: {
-                //     'itemId': '1'
-                // },
+            const response = await BlogAPI.get(`items`, {
+                params: {
+                    'itemId': `${query}`
+                },
                 // params: {
                 //     'Key': {'itemId': `${query}`},
                 // },
@@ -27,8 +27,12 @@ const usePosts = (defaultSearchQuery) => {
                 //     //"Access-Control-Allow-Credential":"false",
                 // }
             });
-            console.log('[UsePosts] response', response.data);
-            //setPosts(response.data);
+
+            console.log('[UsePosts] response, ', response);
+            console.log('[UsePosts] response.data, ', response.data);
+            console.log('[UsePosts] response.data.Items, ', response.data.Items);
+
+            setPosts(response.data.Items);
         } catch (err) {
             console.error(err)
         }
