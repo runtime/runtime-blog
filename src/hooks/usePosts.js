@@ -19,18 +19,12 @@ const usePosts = (defaultSearchQuery) => {
                 // params: {
                 //     'Key': {'itemId': `${query}`},
                 // },
-                // headers: {
-                //     "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-                //     "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
-                //     "Access-Control-Allow-Origin": "*",
-                //
-                //     //"Access-Control-Allow-Credential":"false",
-                // }
+
             });
 
-            console.log('[UsePosts] response, ', response);
-            console.log('[UsePosts] response.data, ', response.data);
-            console.log('[UsePosts] response.data.Items, ', response.data.Items);
+            // console.log('[UsePosts] response, ', response);
+            // console.log('[UsePosts] response.data, ', response.data);
+            // console.log('[UsePosts] response.data.Items, ', response.data.Items);
 
             setPosts(response.data.Items);
         } catch (err) {
@@ -40,8 +34,6 @@ const usePosts = (defaultSearchQuery) => {
 
     return [posts, search]
 };
-
-
 
 export default usePosts;
 

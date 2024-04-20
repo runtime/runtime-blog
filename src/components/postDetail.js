@@ -12,13 +12,11 @@ const PostDetail = ({post}) => {
             <div className="ui embed">
                 <iframe title="post player" src={post.media.video} />
             </div>
+            {/*<div><img alt={post.title} src={post.media.image}/></div>*/}
             <div className="ui segment">
-                <p></p>
-                <img alt={post.title} src={post.media.image}/>
-                <h4 className="ui header">{post.title}</h4>
-                <p className="ui body" >{post.description}</p>
-                <p className="ui body">{post.tags}</p>
-                <p></p>
+                <h4 className="ui title">{post.title}</h4>
+                <p className="ui desc" >{post.description}</p>
+                <p className="ui tags">{post.tags}</p>
             </div>
         </div>
     )
