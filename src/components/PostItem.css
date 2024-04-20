@@ -7,3 +7,14 @@
 .post-item.item img {
     max-width: 180px;
 }
+
+.post-item.title {
+    font-family: Impact;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.post-item.body {
+    font-style: italic;
+    padding-bottom: 12px;
+}

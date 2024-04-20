@@ -1,13 +1,15 @@
 import './PostItem.css';
 import React from 'react';
 
-const PostItem = ({ post, onPostSelect}) => {
-    console.log(post);
+const PostItem = ({post, onPostSelect}) => {
+    console.log('[PostItem] post: ', post);
     return (
         <div onClick={()=>{onPostSelect(post)}} className="post-item item">
-            <img className="ui image" alt={post.snippet.title} src={post.snippet.thumbnails.medium.url} />
+            <img className="ui image" alt={post.title} src={post.media.thumb} />
             <div className="content">
-                <div className="header">{post.snippet.title}</div>
+                <div className="post-item title">{post.title}</div>
+                {/*<div className="post-item tags">{post.tags}</div>*/}
+                {/*<div>PostItem</div>*/}
             </div>
 
         </div>

@@ -12,20 +12,21 @@ const usePosts = (defaultSearchQuery) => {
 
     const search = async (query) => {
         try {
-            const response = await BlogAPI.get(`posts/${query}`, {
+            const response = await BlogAPI.get(`items`, {
                 params: {
-                    //'id': 1
+                    'itemId': `${query}`
                 },
-                headers: {
-                    "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-                    "Access-Control-Allow-Methods": "GET,PUT,OPTIONS",
-                    "Access-Control-Allow-Origin": "*",
-                    "Content-Type": "application/json",
-                    "x-api-key": "1qRS60RkX1aurXTqlK4Wv36eSRSmIiTQ2F7V1zrR"
-                }
+                // params: {
+                //     'Key': {'itemId': `${query}`},
+                // },
+
             });
-            console.log(response.data.items);
-            setPosts(response.data.items);
+
+            // console.log('[UsePosts] response, ', response);
+            // console.log('[UsePosts] response.data, ', response.data);
+            // console.log('[UsePosts] response.data.Items, ', response.data.Items);
+
+            setPosts(response.data.Items);
         } catch (err) {
             console.error(err)
         }
@@ -33,8 +34,6 @@ const usePosts = (defaultSearchQuery) => {
 
     return [posts, search]
 };
-
-
 
 export default usePosts;
 

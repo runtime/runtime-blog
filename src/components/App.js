@@ -19,7 +19,7 @@ const App = () => {
             <div className="ui grid">
                 <div className="ui row">
                     <div className="eleven wide column">
-                        <PostDetail post={currPost} />
+                        {<PostDetail post={currPost} />}
                     </div>
                     <div className="five wide column">
                         <PostList
