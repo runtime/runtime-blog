@@ -1,3 +1,9 @@
+import {
+    TextField,
+    Button,
+    Typography,
+    Box
+} from '@mui/material';
 import React, {useState} from 'react';
 
 
@@ -15,8 +21,8 @@ const SearchBar = ({onSearchSubmit}) => {
          <div className="search-bar ui segment">
             <form onSubmit={onSubmit} className="ui form" id='10'>
                 <div className="field">
-                    <label>Post Search</label>
-                    <input
+                    <Button>Search</Button>
+                    <TextField
                         type="text"
                         value={query}
                         onChange={onInputChange}

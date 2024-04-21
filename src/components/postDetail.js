@@ -1,24 +1,27 @@
+import './PostDetail.css';
 import React from 'react';
+import {Box, CircularProgress, Tab} from "@mui/material";
 
 const PostDetail = ({post}) => {
     if(!post) {
-       return <div>loading...</div>
+       return <CircularProgress color="success" />
+
     }
 
     //const postSrc = `https://www.youtube.com/embed/${post.id.postId}`;
 
     return(
-        <div>
+        <Box>
             <div className="ui embed">
                 <iframe title="post player" src={post.media.video} />
             </div>
             {/*<div><img alt={post.title} src={post.media.image}/></div>*/}
             <div className="ui segment">
-                <h4 className="ui title">{post.title}</h4>
-                <p className="ui desc" >{post.description}</p>
-                <p className="ui tags">{post.tags}</p>
+                <h4 className="post-detail title">{post.title}</h4>
+                <p className="post-detail desc" >{post.description}</p>
+                <Tab>{post.tags}</Tab>
             </div>
-        </div>
+        </Box>
     )
 
 }
