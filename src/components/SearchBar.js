@@ -18,18 +18,21 @@ const SearchBar = ({onSearchSubmit}) => {
     }
 
     return (
-         <div className="search-bar ui segment">
-            <form onSubmit={onSubmit} className="ui form" id='10'>
+         <Box className="search-bar ui segment">
+            <form className="ui form" id='10'>
                 <div className="field">
-                    <Button>Search</Button>
+                    <Button onSubmit={onSubmit}>Search</Button>
                     <TextField
                         type="text"
                         value={query}
                         onChange={onInputChange}
+                        sx={{
+                            width: 300
+                        }}
                     />
                 </div>
             </form>
-        </div>
+        </Box>
     )
 }
 

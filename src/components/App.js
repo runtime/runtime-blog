@@ -27,6 +27,11 @@ const App = () => {
     return (
         <Box>
             <div className='ui container'>
+                <Typography variant="h4">
+                    runtime blog
+                </Typography>
+            </div>
+            <div className='ui container'>
                 <SearchBar onSearchSubmit={search}/>
                 <div className="ui grid">
                     <div className="ui row">

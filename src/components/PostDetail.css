@@ -5,15 +5,22 @@
     font-family: Roboto;
 }
 
-.post-detail.item img {
-    max-width: 1300px;
+.post-detail.img {
+    display: flex !important;
+    align-items: center !important;
+    max-width: 1200px;
+    max-height: 600px;
 }
 
 .post-detail.title {
     padding: 3px;
 }
 
-.post-detail.body {
+.post-detail.subtitle {
+    padding: 3px;
+}
+
+.post-detail.desc {
     font-family: Roboto;
     font-style: italic;
     padding-bottom: 12px;
