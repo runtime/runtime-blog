@@ -2,26 +2,29 @@
     display: flex !important;
     align-items: center !important;
     cursor: pointer;
-    font-family: Roboto;
 }
 
 .post-detail.img {
-    display: flex !important;
-    align-items: center !important;
-    max-width: 1200px;
-    max-height: 600px;
+    /*display: flex !important;*/
+    /*align-items: center !important;*/
+    /*max-height: 1200px;*/
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .post-detail.title {
-    padding: 3px;
+    font-weight: 600;
 }
 
 .post-detail.subtitle {
-    padding: 3px;
+   /*line-height: 1.5;*/
 }
 
 .post-detail.desc {
-    font-family: Roboto;
-    font-style: italic;
-    padding-bottom: 12px;
+    /*font-style: italic;*/
+    margin-bottom: 12px;
+    /*font-family: "Arial";*/
+    /*font-size: large;*/
+    /*line-height: 24px;*/
+
 }

@@ -1,11 +1,12 @@
 import {
     ImageList,
-    ImageListItem
+    ImageListItem, Typography
 } from '@mui/material';
+import { theme } from "@mui/material/styles";
 import React from 'react';
 import PostItem from "./PostItem";
 
-const PostList = ({ posts, onPostSelect }) => {
+const PostList = ({ posts, onPostSelect, theme }) => {
     console.log('[PostList] posts : ', posts);
      const renderedList = posts.map((post) => {
           return <PostItem key={post.itemId} onPostSelect={onPostSelect} post={post} />
@@ -28,7 +29,13 @@ const PostList = ({ posts, onPostSelect }) => {
 
 
 
-    return <ImageList className="ui relaxed divided list">{renderedList}</ImageList>
+    return (
+        // <Typography>
+        //     <h1>Case Studies</h1>
+        // </Typography>
+        <ImageList className="ui relaxed divided list">{renderedList}</ImageList>
+
+    )
     // return <div> PostList </div>
 }
 

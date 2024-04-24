@@ -13,15 +13,6 @@ const PostItem = ({post, onPostSelect}) => {
                     loading="lazy"
                 />
             </ImageListItem>
-        // <div onClick={()=>{onPostSelect(post)}} className="post-item item">
-        //     <img className="ui image" alt={post.title} src={post.media.thumb} />
-        //     <div className="content">
-        //         <div className="post-item title">{post.title}</div>
-        //         {/*<div className="post-item tags">{post.tags}</div>*/}
-        //         {/*<div>PostItem</div>*/}
-        //     </div>
-        // </div>
-
 
     )
 }
@@ -31,7 +22,48 @@ export default PostItem;
 
 //////
 
-
+// return(
+//     <Card>
+//         <img className="post-detail img" alt={post.title} src={post.media.image}/>
+//         <CardHeader
+//             title={post.title}
+//             subheader={post.subtitle}
+//
+//             titleTypographyProps={{ align: 'left' }}
+//             subheaderTypographyProps={{
+//                 align: 'left',
+//             }}
+//             descriptionTypographyProps={{
+//                 align: 'right',
+//                 variant: 'body2',
+//             }}
+//             // sx={{
+//             //     backgroundColor: '0xFF8800',
+//             // }}
+//
+//         />
+//         <CardContent>
+//             <Container maxWidth="lg">
+//                 <Grid container spacing={5} alignItems="flex-end">
+//                     <Grid item xs={12} md={12} lg={12}>
+//                         <Typography variant="body2" color="textSecondary" component="h4">
+//                             <Chip label={post.tags} variant="filled"/>
+//                             {post.client}
+//                         </Typography>
+//                     </Grid>
+//                     {/*<Grid item xs={12} md={4} lg={4}>*/}
+//                     {/*  */}
+//                     {/*</Grid>*/}
+//                     <Grid item xs={12} md={12} lg={12}>
+//                         <Typography variant="body2" color="textSecondary" component="p">
+//                             {post.description}
+//                         </Typography>
+//                     </Grid>
+//                 </Grid>
+//             </Container>
+//         </CardContent>
+//     </Card>
+//  )
 
 
 
