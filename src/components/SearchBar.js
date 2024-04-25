@@ -16,7 +16,7 @@ import React, {useState} from 'react';
 
 
 const SearchBar = ({onSearchSubmit}) => {
-    const [query, setQuery] = useState('');
+    const [query, setQuery] = useState('3');
     const onInputChange = (e) => {
         setQuery(e.target.value);
     }

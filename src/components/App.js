@@ -24,17 +24,25 @@ const App = () => {
 
     return (
         <Container>
-            <AppBar
-                color="secondary" >
-                <SearchBar onSearchSubmit={search}/>
-            </AppBar>
-            <PostDetail post={currPost}/>
-            <PostList
-                //onPostSelect={onPostSelect}
-                // shorthand the onPostSelect Function to remove extra function
-                onPostSelect={setCurrPost}
-                posts={posts}
-            />
+            <Box>
+                <AppBar
+                    color="secondary" >
+                    <SearchBar onSearchSubmit={search}/>
+                </AppBar>
+                <Box sx={{marginTop: {xs: 8, sm: 9, md: 9, lg:9}}}>
+                    <Typography variant="h6" color="primary" component="a" >
+                        Case Studies
+                    </Typography>
+                    <PostDetail post={currPost}/>
+                    <PostList
+                        //onPostSelect={onPostSelect}
+                        // shorthand the onPostSelect Function to remove extra function
+                        onPostSelect={setCurrPost}
+                        posts={posts}
+                    />
+                </Box>
+
+            </Box>
         </Container>
     );
 }

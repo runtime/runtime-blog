@@ -5,9 +5,9 @@
     font-family: Roboto;
 }
 
-.post-item.item img {
-    max-width: 36px;
-    padding-right: 12px;
+.post-item.item.img {
+    /*max-width: 36px;*/
+    /*padding-right: 12px;*/
 }
 
 .post-item.title {

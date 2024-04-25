@@ -33,6 +33,7 @@ const PostDetail = ({post}) => {
                             fit='contain'
                             className='post-detail img'
                             src={post.media.image}
+                            // sx={{ maxHeight: { xs: 'auto', sm: '80%', lg: '80px'}}}
                         />
                     </Grid>
                 </Grid>
