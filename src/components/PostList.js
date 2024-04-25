@@ -1,4 +1,5 @@
 import {
+    Box,
     ImageList,
     ImageListItem, Typography
 } from '@mui/material';
@@ -30,11 +31,12 @@ const PostList = ({ posts, onPostSelect, theme }) => {
 
 
     return (
-        // <Typography>
-        //     <h1>Case Studies</h1>
-        // </Typography>
-        <ImageList className="ui relaxed divided list">{renderedList}</ImageList>
-
+        <Box>
+            <Typography variant="h6" color="primary" component="a" className='post-list title'>
+                Case Studies
+            </Typography>
+            <ImageList sx={{ width: 500, height: 450 }} gap={10} cols={3} rowHeight={164}>{renderedList}</ImageList>
+        </Box>
     )
     // return <div> PostList </div>
 }

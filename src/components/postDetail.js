@@ -53,6 +53,7 @@ const PostDetail = ({post}) => {
                             variant="filled"
                             color='primary'
                             pointerEvents= 'none'
+                            sx={{ transitionDuration: '0.3s', transitionProperty: 'all', transitionTimingFunction: 'linear', opacity: { xs: 0, sm: 0.8, lg: 0.8}}}
 
                         />
                         <Typography
@@ -68,50 +69,17 @@ const PostDetail = ({post}) => {
                             {post.client}
                         </Typography>
                     </Grid>
+                    <Grid item xs={12} md={12} lg={12}>
+                        <Typography variant="subtitle1" color="textSecondary" align='left' component="a">
+                            {post.subtitle}
+                        </Typography>
+                        <Typography className='post-detail desc' variant="body1" color="textSecondary" align='left' component="a">
+                            {post.description}
+                        </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
-            <Grid item>
-                <Grid container direction="row">
-                    <Typography variant="subtitle1" color="textSecondary" align='left' component="a">
-                        {post.subtitle}
-                    </Typography>
-                    <Typography className='post-detail desc' variant="body1" color="textSecondary" align='left' component="a">
-                        {post.description}
-                    </Typography>
-                </Grid>
-            </Grid>
-
         </Grid>
-
-        // <Grid container spacing={2}>
-        //     <Grid item xs={12} md={12} lg={12}>
-        //         <Image src={post.media.image} />
-        //     </Grid>
-        // </Grid>
-
-        //  <Grid container spacing={2}>
-        //     <Grid item xs={12} md={12} lg={12}>
-        //         <Typography variant="h4" color="textSecondary" component="a">
-        //             {post.title}
-        //         </Typography>
-        //     </Grid>
-        //     <Grid item xs={12} md={12} lg={6}>
-        //         <Typography variant="p" color="textSecondary" component="a">
-        //             {post.subtitle}
-        //         </Typography>
-        //     </Grid>
-        //
-        //     <Grid item xs={12} md={12} lg={6}>
-        //         <Typography variant="body2" color="textSecondary" component="h4">
-        //             client: {post.client}
-        //         </Typography>
-        //     </Grid>
-        //
-        //     <Grid item xs={12} md={12} lg={6}>
-        //         <Chip label={post.tags} variant="filled" color='success'/>
-        //     </Grid>
-        // </Grid>
-
 
 
     )

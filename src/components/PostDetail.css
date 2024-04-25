@@ -8,8 +8,8 @@
     /*display: flex !important;*/
     /*align-items: center !important;*/
     /*max-height: 1200px;*/
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .post-detail.title {
@@ -22,7 +22,7 @@
 
 .post-detail.desc {
     /*font-style: italic;*/
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     /*font-family: "Arial";*/
     /*font-size: large;*/
     /*line-height: 24px;*/
