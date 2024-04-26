@@ -1,6 +1,6 @@
 import {
     Typography,
-    Box, Container, AppBar, Grid
+    Box, Container, AppBar, Grid,
 } from '@mui/material';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -29,10 +29,20 @@ const App = () => {
                     color="secondary" >
                     <SearchBar onSearchSubmit={search}/>
                 </AppBar>
-                <Box sx={{marginTop: {xs: 8, sm: 9, md: 9, lg:9}}}>
-                    <Typography variant="h6" color="primary" component="a" >
-                        Case Studies
-                    </Typography>
+                {/*<Grid item >*/}
+                {/*    <Grid container direction="row">*/}
+                {/*        <Grid item xs={12} md={10} lg={10}>*/}
+
+                {/*        </Grid>*/}
+                {/*        <Grid item xs={12} md={2} lg={2}>*/}
+
+                {/*        </Grid>*/}
+                {/*    </Grid>*/}
+                {/*</Grid>*/}
+                <Box>
+                    {/*<Typography variant="h6" color="primary" component="a" >*/}
+                    {/*    Case Studies*/}
+                    {/*</Typography>*/}
                     <PostDetail post={currPost}/>
                     <PostList
                         //onPostSelect={onPostSelect}
