@@ -10,9 +10,6 @@ const PostItem = ({post, onPostSelect}) => {
 
                 key={post.itemId} onClick={()=>{onPostSelect(post)}}>
                 <Image
-                    // sx={{positionY : {
-                    //         xs: '-20px', sm: '-20px', md: '-20px', lg: '-100px', xl: 30
-                    //     }}}
                     // className='post-item item img'
                     srcSet={`${post.media.thumb}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                     src={`${post.media.thumb}?w=164&h=164&fit=crop&auto=format`}

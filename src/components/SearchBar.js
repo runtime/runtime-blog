@@ -70,8 +70,6 @@ const SearchBar = ({onSearchSubmit}) => {
     const blogTitle = "{Code} & Culture"
    // const subTitle = 'the missing .docs'
 
-
-
     return (
       <Box>
             <Toolbar>
@@ -83,14 +81,6 @@ const SearchBar = ({onSearchSubmit}) => {
                 >
                     {blogTitle}
                 </Typography>
-                {/*<Typography*/}
-                {/*    variant="p"*/}
-                {/*    noWrap*/}
-                {/*    component="div"*/}
-                {/*    sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}*/}
-                {/*>*/}
-                {/*    {subTitle}*/}
-                {/*</Typography>*/}
                 <Search>
                     <SearchIconWrapper>
                         <SearchIcon />

@@ -80,7 +80,7 @@ const PostDetail = ({post}) => {
             {/*page content*/}
             <Grid item>
                 <Grid container direction="row">
-                    <Grid item xs={12} md={10} lg={10}>
+                    <Grid item xs={12} sm={12} md={12} lg={12}>
                         <Typography
                             variant="h5"
                             color="primary"
@@ -89,10 +89,12 @@ const PostDetail = ({post}) => {
                             {post.title}
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} md={12} lg={12}>
-                        <Typography variant="subtitle1" color="textSecondary" align='left' component="a">
+                    <Grid item xs={12} sm={12} md={12} lg={12}>
+                        <Typography variant="subtitle1" color="textSecondary" align='right' component="a">
                             {post.subtitle}
                         </Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={12} lg={12}>
                         <Typography className='post-detail desc' variant="body1" color="textSecondary" align='left' component="a">
                             {post.description}
                         </Typography>

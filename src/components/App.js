@@ -29,20 +29,7 @@ const App = () => {
                     color="secondary" >
                     <SearchBar onSearchSubmit={search}/>
                 </AppBar>
-                {/*<Grid item >*/}
-                {/*    <Grid container direction="row">*/}
-                {/*        <Grid item xs={12} md={10} lg={10}>*/}
-
-                {/*        </Grid>*/}
-                {/*        <Grid item xs={12} md={2} lg={2}>*/}
-
-                {/*        </Grid>*/}
-                {/*    </Grid>*/}
-                {/*</Grid>*/}
                 <Box>
-                    {/*<Typography variant="h6" color="primary" component="a" >*/}
-                    {/*    Case Studies*/}
-                    {/*</Typography>*/}
                     <PostDetail post={currPost}/>
                     <PostList
                         //onPostSelect={onPostSelect}
