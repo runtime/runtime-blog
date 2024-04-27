@@ -2,16 +2,16 @@
     display: flex !important;
     align-items: center !important;
     cursor: pointer;
+    font-family: Roboto;
 }
 
-.post-item.item img {
-    max-width: 180px;
+.post-item.item.img {
+    /*max-width: 36px;*/
+    /*padding-right: 12px;*/
 }
 
 .post-item.title {
-    font-family: Impact;
-    font-weight: bold;
-    padding-bottom: 3px;
+    padding: 3px;
 }
 
 .post-item.body {

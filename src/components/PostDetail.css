@@ -1,0 +1,28 @@
+.post-detail  {
+    /*display: flex !important;*/
+    /*align-items: center !important;*/
+}
+
+.post-detail.img {
+    /*display: flex !important;*/
+    /*align-item s: center !important;*/
+    /*max-height: 1200px;*/
+    margin-bottom: 20px;
+}
+
+.post-detail.title {
+    font-weight: 600;
+}
+
+.post-detail.subtitle {
+   /*line-height: 1.5;*/
+}
+
+.post-detail.desc {
+    /*font-style: italic;*/
+    margin-bottom: 24px;
+    /*font-family: "Arial";*/
+    /*font-size: large;*/
+    /*line-height: 24px;*/
+
+}

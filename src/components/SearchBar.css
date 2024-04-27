@@ -1,0 +1,12 @@
+.search-bar input {
+    max-height: 30px;
+}
+
+.search-bar Button {
+    color: white;
+}
+
+/* Increase the specificity */
+.search-bar Button:disabled {
+    color: white;
+}
