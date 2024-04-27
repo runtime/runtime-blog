@@ -39,31 +39,49 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## About
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Single page react app that displays a post or case-study with an item list below it as navigation.
+this is an mvp to connect react with axios to an aws api gateway with lambda and dynamodb.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app has three components
 
-### Code Splitting
+--Search - search the api set state 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+--post detail - currentPost displayed on top 
 
-### Analyzing the Bundle Size
+--Post list - list of posts /items 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+--Post item - single post /items/{proxy+} 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Essentially for now it is a single page case study app that calls the API, displays the case studies in tiles and populates the first one in a post-detail component.
+This would have to be expanded upon to make into a full blown website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+
+
+### BlogAPI 
+currently this only scans all items and will fetch an item by id when called.
+Currently the BlogAPI makes one call and the lambda function in the RTB CDK handles all of it but ideally we would have a separate lambda for the GET, POST, DELETE to the rtb-blog-db and separate apis for other components if needed.
+
+### MaterialUI
+
+Box,
+CircularProgress,
+Chip,
+Grid,
+CardHeader,
+Container,
+Card,
+CardContent,
+Typography,
+
+also Image 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+localhost:3000 for now
 
 ### `npm run build` fails to minify
 
@@ -71,5 +89,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### todo
-fix cors issues on api gateway
 create .env file and add to .gitignore
