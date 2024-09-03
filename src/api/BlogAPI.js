@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default axios.create({
     //baseURL: 'https://:aws:execute-api:us-east-1:926079816406:9dvbmeoem1/*/OPTIONS/',
-    baseURL: 'https://vbnglcslnf.execute-api.us-east-1.amazonaws.com/prod',
+    baseURL: 'https://6p4cy8nbz9.execute-api.us-east-1.amazonaws.com/prod',
     //baseURL: 'https://y5rgcm8zd0.execute-api.us-east-1.amazonaws.com/test/pets',
     //baseURL: 'https://6zjcsl5iid.execute-api.us-east-1.amazonaws.com/WhiskeyAPIStaging/',
     //baseURL: 'https://jsonplaceholder.typicode.com/posts',
